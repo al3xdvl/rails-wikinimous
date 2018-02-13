@@ -1,0 +1,22 @@
+<div class="navbar-wagon">
+  <!-- Logo -->
+  <!-- <a href="/" class="navbar-wagon-brand"> -->
+    <%= link_to(image_tag("ww.jpg", id: "ww"), articles_path, :class => "navbar-wagon-brand") %>
+
+    <!-- <img src="../assets/images/ww.jpg" alt="ww"> -->
+  </a>
+
+    <!-- Profile picture with dropdown list -->
+    <div class="navbar-wagon-item">
+      <div class="dropdown">
+
+        <img src="https://kitt.lewagon.com/placeholder/users/tvuit" class="avatar dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown">
+        <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+          <li><%= link_to "New article", new_article_path %></li>
+          <li><%= link_to "Back to articles", articles_path %></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</div>

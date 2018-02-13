@@ -1,0 +1,11 @@
+
+<h2><%= @article.title %></h2>
+<button class="btn btn-outline-primary"><i class="fas fa-pencil-alt"></i><%= link_to "Edit", edit_article_path %>
+</button>
+<button class="btn btn-outline-danger"><i class="far fa-trash-alt"></i><%= link_to article_path(@article), method: :delete, data: { confirm: "Are you sure?" } do  %>
+  Delete
+  <% end %>
+</button>
+<p><%= @article.content %></p>
+
+<p><i class="fas fa-undo"></i><%= link_to "Back to list", articles_path %></p>
